@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menuPrincipalAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:menu_colorNormal="@color/purple_200"
+            app:menu_colorPressed="@color/purple_200"
+            app:menu_fab_label="Menu">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menuVentas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="clicVentaAdmin"
+                android:src="@drawable/ic_action_name"
+                app:fab_colorNormal="@color/purple_200"
+                app:fab_colorPressed="@color/purple_200"
+                app:fab_label="Ventas" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/menuPromociones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="clicPromocionAdmin"
+                android:src="@drawable/ic_action_name"
+                app:fab_colorNormal="@color/purple_200"
+                app:fab_colorPressed="@color/purple_200"
+                app:fab_label="Promociones" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

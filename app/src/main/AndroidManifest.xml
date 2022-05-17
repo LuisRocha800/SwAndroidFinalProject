@@ -26,6 +26,8 @@
         <activity android:name=".LoginAdminActivity"/>
         <activity android:name=".LoginClienteActivity"/>
         <activity android:name=".LoginEmpleadoActivity"/>
+        <activity android:name=".MenuAdministrador"/>
+        <activity android:name=".VentaActivity"/>
 
     </application>
 
