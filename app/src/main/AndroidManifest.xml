@@ -23,6 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginAdminActivity"/>
+        <activity android:name=".LoginClienteActivity"/>
+        <activity android:name=".LoginEmpleadoActivity"/>
+
     </application>
 
 </manifest>

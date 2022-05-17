@@ -23,12 +23,18 @@ public class principalActivity extends AppCompatActivity {
         actionMenu.setClosedOnTouchOutside(true);
     }
 
-  public void clicSubMenuTres(View view){
-      Toast.makeText(this, "SubMenuTres Tocado", Toast.LENGTH_SHORT).show();
+  public void clicAdmin(View view){
+        Intent intent = new Intent(this,LoginAdminActivity.class);
+        startActivity(intent);
   }
 
-    public void clicSubMenuDos(View view){
-      //  Intent intent = new Intent(this,SecondActivity.class);
-     //   startActivity(intent);
+    public void clicEmpleado(View view){
+        Intent intent = new Intent(this,LoginEmpleadoActivity.class);
+       startActivity(intent);
+    }
+
+    public void clicCliente(View view){
+        Intent intent = new Intent(this,LoginClienteActivity.class);
+        startActivity(intent);
     }
 }

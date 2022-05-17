@@ -14,27 +14,44 @@
         android:id="@+id/menuPrincipal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:menu_fab_label="Menu"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true">
+        app:menu_colorNormal="@color/purple_200"
+        app:menu_colorPressed="@color/purple_200"
+        app:menu_fab_label="Menu">
 
         <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/submenudos"
+            android:id="@+id/menuAdministrador"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:onClick="clicSubMenuDos"
-            app:fab_label="Menu dos"
-            android:src="@drawable/ic_action_name"/>
+            android:onClick="clicAdmin"
+            android:src="@drawable/ic_action_name"
+            app:fab_colorNormal="@color/purple_200"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_label="Administrador" />
 
         <com.github.clans.fab.FloatingActionButton
-            android:id="@+id/submenutres"
-            android:onClick="clicSubMenuTres"
+            android:id="@+id/menuEmpleado"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:fab_label="Menu tres"
-            android:src="@drawable/ic_action_name">
+            android:onClick="clicEmpleado"
+            android:src="@drawable/ic_action_name"
+            app:fab_colorNormal="@color/purple_200"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_label="Empleado"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menuCliente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="clicCliente"
+            android:src="@drawable/ic_action_name"
+            app:fab_colorNormal="@color/purple_200"
+            app:fab_colorPressed="@color/purple_200"
+            app:fab_label="Cliente" >
 
         </com.github.clans.fab.FloatingActionButton>
+
     </com.github.clans.fab.FloatingActionMenu>
 
 </RelativeLayout>
